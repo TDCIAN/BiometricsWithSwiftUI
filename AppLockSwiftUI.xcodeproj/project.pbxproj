@@ -12,6 +12,8 @@
 		180C37CB2652B84C00FAF8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180C37CA2652B84C00FAF8DB /* Assets.xcassets */; };
 		180C37CE2652B84C00FAF8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180C37CD2652B84C00FAF8DB /* Preview Assets.xcassets */; };
 		180C37D72652B8BF00FAF8DB /* AppLockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C37D62652B8BF00FAF8DB /* AppLockViewModel.swift */; };
+		180C37DA2652BBEA00FAF8DB /* AppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C37D92652BBEA00FAF8DB /* AppHomeView.swift */; };
+		180C37DD2652BEC200FAF8DB /* AppLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180C37DC2652BEC200FAF8DB /* AppLockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		180C37CD2652B84C00FAF8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		180C37CF2652B84C00FAF8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180C37D62652B8BF00FAF8DB /* AppLockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockViewModel.swift; sourceTree = "<group>"; };
+		180C37D92652BBEA00FAF8DB /* AppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHomeView.swift; sourceTree = "<group>"; };
+		180C37DC2652BEC200FAF8DB /* AppLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				180C37CA2652B84C00FAF8DB /* Assets.xcassets */,
 				180C37CF2652B84C00FAF8DB /* Info.plist */,
 				180C37CC2652B84C00FAF8DB /* Preview Content */,
+				180C37D92652BBEA00FAF8DB /* AppHomeView.swift */,
+				180C37DC2652BEC200FAF8DB /* AppLockView.swift */,
 			);
 			path = AppLockSwiftUI;
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				180C37C92652B84B00FAF8DB /* ContentView.swift in Sources */,
+				180C37DA2652BBEA00FAF8DB /* AppHomeView.swift in Sources */,
 				180C37D72652B8BF00FAF8DB /* AppLockViewModel.swift in Sources */,
 				180C37C72652B84B00FAF8DB /* AppLockSwiftUIApp.swift in Sources */,
+				180C37DD2652BEC200FAF8DB /* AppLockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

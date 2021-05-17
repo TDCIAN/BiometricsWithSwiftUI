@@ -12,6 +12,11 @@ class AppLockViewModel: ObservableObject {
     @Published var isAppLockEnabled: Bool = false
     @Published var isAppUnlocked: Bool = false
     
+    init() {
+        getAppLockState()
+        print("현재 앱 락스테이트: \(getAppLockState())")
+    }
+    
     func enableAppLock() {
         UserDefaults.standard.set(true, forKey: UserDefaultsKeys.isAppLockEnabled.rawValue)
         self.isAppLockEnabled = true
@@ -31,7 +36,7 @@ class AppLockViewModel: ObservableObject {
         let laContext = LAContext()
         let isBiometricAvailable = laContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
         if let error = error {
-            print(error.localizedDescription)
+            print("checkIfBiometricAvailable - error: \(error.localizedDescription)")
         }
         return isBiometricAvailable
     }
@@ -61,7 +66,7 @@ class AppLockViewModel: ObservableObject {
                 } else {
                     if let error = error {
                         DispatchQueue.main.async {
-                            print(error.localizedDescription)
+                            print("appLockStateChange - error: \(error.localizedDescription)")
                         }
                     }
                 }
@@ -81,7 +86,7 @@ class AppLockViewModel: ObservableObject {
                 } else {
                     if let error = error {
                         DispatchQueue.main.async {
-                            print(error.localizedDescription)
+                            print("appLockValidation - error: \(error.localizedDescription)")
                         }
                     }
                 }
